@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>decodificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <div class="container__entrada">
+        <textarea class="entrada" wrap="hard"></textarea>
+    </div>
+    <div class="container__botao">
+        <div class="aviso"><p>*Não criptografa letra maiuscula e caracteres especiais*</p></div>
+        <button onclick="criptografar()" class="botao__cripto">Criptografar</button>
+        <button onclick="descriptografar()" class="botao__descripto">Descriptografar</button>
+    </div>
+    <div class="container__texto" >
+        <p class="texto" id="texto__saida"></p>
+    </div>
+    <div class="container__copiar">
+        <button onclick="copiar_saida()" class="botao__copiar">Copiar</button>
+    </div>
+    <div class="imagem__alura">
+        <img src="logo.png" alt="logo da alura" >
+    </div>
+   
+<script src="app.js" defer></script>    
+</body>
+</html>

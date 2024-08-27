@@ -1,0 +1,119 @@
+body {
+    display: grid;
+    
+    grid-template-columns: [coluna-inicial] 3vh [coluna2] 8vh [coluna3] 6vh [coluna4] 800px [coluna5] 6vh [coluna6] 300px [coluna-final] 3vh;
+    grid-template-rows: [linha-inicial] 3vh [linha2] 5vh [linha3] 7vh [linha4] 70vh [linha5] 2vh [linha6] 10vh [linha-final] 3vh;
+    background-color: #E5E5E5;
+    width: 100vh;
+    height: 100vh;
+    align-items: stretch;
+}
+
+
+.container__entrada {
+    
+    margin-top:5rem ;
+    margin-left:5 ;
+    grid-column: coluna3 / coluna5;
+    grid-row: linha2 / linha6 ;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 24px;
+
+}
+
+.container__botao {
+    
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    grid-column: coluna4 / coluna5;
+    grid-row: linha6 / linha-final;
+}
+
+.botao__cripto {
+    padding: 16px 64px;
+    border-radius: 24px;
+    border: none;
+    background-color: #0A3871;
+    color: white;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.botao__descripto {
+    padding: 16px 64px;
+    border-radius: 24px;
+    border: none;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+.container__texto {
+    grid-column: coluna6 / coluna-final ;
+    grid-row: linha2 / linha6;
+    background-color: white;
+    border-radius: 24px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow-y: auto;
+
+}
+
+.entrada {
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+    border: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+.texto {
+   margin: 2px;
+   font-family: 'Inter', sans-serif;
+
+}
+
+.aviso {
+    display: flex;
+    align-content: end;
+    justify-content: end;
+    font-family: 'Inter', sans-serif;
+}
+
+.container__copiar {
+    grid-column: coluna6 / coluna-final;
+    grid-row: linha6 / linha-final;
+    display: flex;
+    justify-content: center;
+}
+
+.botao__copiar {
+    padding: 16px 64px;
+    border-radius: 24px;
+    border: none;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+.imagem__alura {
+    grid-column: coluna3 / coluna5 ;
+    grid-row: linha2 / linha3 ;
+    display: flex;
+    align-content: start ;
+    justify-content: center;
+    
+}
